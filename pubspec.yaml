@@ -1,0 +1,28 @@
+name: treva
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  carousel_pro: ^0.0.13
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/carousel_shoes.jpg
+    - assets/images/carousel_shoes1.jpg
+    - assets/images/mobile.jpg
+    - assets/images/promotion/car.png
+    - assets/images/promotion/laptop.png
+    - assets/images/promotion/taplet.png
