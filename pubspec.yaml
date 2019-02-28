@@ -23,6 +23,10 @@ flutter:
     - assets/images/carousel_shoes.jpg
     - assets/images/carousel_shoes1.jpg
     - assets/images/mobile.jpg
+    - assets/images/pant.jpg
+    - assets/images/shawal.jpg
+    - assets/images/skirt.jpg
+    - assets/images/jacket.jpeg
     - assets/images/promotion/car.png
     - assets/images/promotion/laptop.png
     - assets/images/promotion/taplet.png
