@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:treva/ProductDetail.dart';
 import 'package:treva/RecmmendedApi.dart';
 import 'package:treva/styles.dart';
 
@@ -6,21 +7,20 @@ class HomeRecommended extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 20),
-      child: Column(
-        children: <Widget>[
-          Row(
-            children: <Widget>[
-              Text(
-                'Recommended',
-                style: homeItemHeader,
-              ),
-            ],
-          ),
-          recommendedGrid(context)
-        ],
-      ),
-    );
+        padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 20),
+        child: Column(
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                Text(
+                  'Recommended',
+                  style: homeItemHeader,
+                ),
+              ],
+            ),
+            recommendedGrid(context)
+          ],
+        ));
   }
 }
 
@@ -55,7 +55,11 @@ Widget recommendedGridItem(int index, BuildContext context) {
           ),
           GestureDetector(
               onTap: () {
-                // onLinkTap(2);
+                print('On tab Pressed');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProductDetail()),
+                );
               },
               child: details(index))
         ],
