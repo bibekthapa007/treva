@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:treva/HomeCarousel.dart';
-import 'package:treva/HomeCategory.dart';
-import 'package:treva/HomeMenu.dart';
-import 'package:treva/HomePromotion.dart';
-import 'package:treva/HomeRecommended.dart';
-import 'package:treva/HomeSale.dart';
+import 'package:treva/HomePage/HomeCarousel.dart';
+import 'package:treva/HomePage/HomeCategory.dart';
+import 'package:treva/HomePage/HomeMenu.dart';
+import 'package:treva/HomePage/HomePromotion.dart';
+import 'package:treva/HomePage/HomeRecommended.dart';
+import 'package:treva/HomePage/HomeSale.dart';
 
 class HomePage extends StatefulWidget {
   @override
