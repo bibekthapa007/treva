@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:treva/AccountPage.dart';
 import 'package:treva/BrandPage.dart';
 import 'package:treva/CartPage.dart';
-import 'package:treva/HomePage.dart';
+import 'package:treva/HomePage/HomePage.dart';
 
 class CustomAppBar extends StatefulWidget {
   @override

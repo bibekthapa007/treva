@@ -65,7 +65,7 @@ class PromotionCard extends StatelessWidget {
             ),
             Padding(
               child: Text(
-                'Discount ${discount}',
+                'Discount $discount',
                 style:
                     TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
               ),

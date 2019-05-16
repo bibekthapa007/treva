@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:treva/ui/CircleWithColor.dart';
 import 'package:treva/ui/CircleWithText.dart';
 import 'package:treva/styles.dart';
 
@@ -26,15 +27,46 @@ class ProductDetail extends StatelessWidget {
           )
         ],
       ),
-      body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            productDetailsCarousel(),
-            productDetailView(),
-            productSize()
-          ]),
+      body: SingleChildScrollView(
+        child: Container(
+          child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                productDetailsCarousel(),
+                productDetailView(),
+                productSize(),
+                productColor()
+              ]),
+        ),
+      ),
     );
   }
+}
+
+Widget productColor() {
+  return Padding(
+    padding: const EdgeInsets.only(bottom: 14.0, right: 14, left: 14),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Text(
+          'Size',
+          style: TextStyle(
+            color: Colors.grey,
+            fontWeight: FontWeight.w600,
+            fontSize: 18,
+          ),
+        ),
+        Row(
+          children: <Widget>[
+            CircleWithColor(Colors.blueAccent),
+            CircleWithColor(Colors.grey),
+            CircleWithColor(Colors.white),
+          ],
+        ),
+      ],
+    ),
+  );
 }
 
 Widget productSize() {
